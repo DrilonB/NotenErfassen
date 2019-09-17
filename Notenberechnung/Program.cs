@@ -38,8 +38,8 @@ namespace Notenberechnung
                         {
 
                         }
-
-
+                        //
+                        //
                         break;
                     case "exit":
                         exit = true;

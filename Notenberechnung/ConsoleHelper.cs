@@ -63,3 +63,4 @@ namespace Notenberechnung
         }
     }
 }
+ yx yx yx  yx x x xy x y xy xy x y xxy yxyx yx xx yxy xx y xy x xy  x
