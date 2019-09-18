@@ -17,8 +17,14 @@ namespace Notenberechnung
             Console.WriteLine("Note eingeben");
             note.Value = ConsoleHelper.ReadDecimal();
             note.Datum = ConsoleHelper.DatumErfasser();
+
             return note;
 
+        }
+
+        public string AusgabeNote()
+        {
+            return this.Value.ToString() + " " + this.Datum.ToString();
         }
     }
 }

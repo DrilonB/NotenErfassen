@@ -30,6 +30,16 @@ namespace Notenberechnung
             Noten.Add(note);
         }
 
+
+        public void ListNoten()
+        {
+            foreach (var note in Noten)
+            {
+              
+                var ausgabe = note.AusgabeNote();
+                Console.WriteLine(ausgabe);
+            }
+        }
         /*
         public AddFach()
         {
