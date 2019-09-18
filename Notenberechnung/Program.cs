@@ -52,8 +52,9 @@ namespace Notenberechnung
 
 
                             case 1:
-                                Fach AddN = new Fach();
-                                AddN.AddNote();
+
+                                Note.CreateNote();
+
                                     break;
 
 

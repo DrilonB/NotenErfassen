@@ -26,8 +26,8 @@ namespace Notenberechnung
 
         public void AddNote()
         {
-            var note = Note.CreateNote();
-            Noten.Add(note);
+            var noteN = Note.CreateNote();
+            Noten.Add(noteN);
         }
 
 
@@ -40,6 +40,22 @@ namespace Notenberechnung
                 Console.WriteLine(ausgabe);
             }
         }
+
+        public static Note CreateNote()
+        {
+            var note = new Note();
+            Console.WriteLine("Note eingeben");
+            note.Value = ConsoleHelper.ReadDecimal();
+            note.Datum = ConsoleHelper.DatumErfasser();
+            Note.Add(note);
+            return note;
+
+        }
+
+
+
+
+
         /*
         public AddFach()
         {
