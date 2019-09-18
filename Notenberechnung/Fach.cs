@@ -12,22 +12,25 @@ namespace Notenberechnung
         
 
         public string Name { get; set; }
-        public List<Note> Noten { get; set; }
+        public List<Note> Noten { get; } = new List<Note>();
 
         public static Fach CreateFach()
         {
             var fach = new Fach();
-            Console.WriteLine("Fach eingeben");
+            Console.WriteLine("Fach eingeben\n");
             fach.Name = Console.ReadLine();
-            fach.Noten = new List<Note>();
             return fach;
                 
         }
 
+        /// <summary>
+        /// erzeugt eine neue Note
+        /// </summary>
         public void AddNote()
         {
             var noteN = Note.CreateNote();
             Noten.Add(noteN);
+            
         }
 
 
@@ -40,18 +43,6 @@ namespace Notenberechnung
                 Console.WriteLine(ausgabe);
             }
         }
-
-        public static Note CreateNote()
-        {
-            var note = new Note();
-            Console.WriteLine("Note eingeben");
-            note.Value = ConsoleHelper.ReadDecimal();
-            note.Datum = ConsoleHelper.DatumErfasser();
-            Note.Add(note);
-            return note;
-
-        }
-
 
 
 

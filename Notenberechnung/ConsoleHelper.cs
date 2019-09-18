@@ -22,7 +22,7 @@ namespace Notenberechnung
                 }
                 else
                 {
-                    Console.Write("Nicht Zugelassen");
+                    Console.Write("Nicht Zugelassen\n");
 
                 }
             }
@@ -44,7 +44,7 @@ namespace Notenberechnung
                 }
                 else
                 {
-                    Console.Write("Nicht Zugelassen");
+                    Console.Write("Nicht Zugelassen\n");
 
                 }
             }
@@ -52,11 +52,11 @@ namespace Notenberechnung
 
         public static DateTime DatumErfasser()
         {
-            Console.Write("Jahr eingeben");
+            Console.Write("Jahr eingeben\n");
             var year = ReadInt();
-            Console.Write("Monat eingeben");
+            Console.Write("Monat eingeben\n");
             var month = ReadInt();
-            Console.Write("Tag eingeben");
+            Console.Write("Tag eingeben\n");
             var day = ReadInt();
 
             return new DateTime(year, month, day);
